@@ -1,0 +1,16 @@
+# Dependências
+node_modules/
+
+# Sessão do WhatsApp do script de terminal: dá acesso à conta, nunca versionar
+.wwebjs_auth/
+.wwebjs_cache/
+
+# Relatórios gerados: contêm telefones de pessoas reais
+groups/
+*.xlsx
+
+# Configuração local do Claude Code
+.claude/settings.local.json
+
+# Sistema
+.DS_Store

@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Exportar Grupo do WhatsApp",
+  "version": "1.0.0",
+  "description": "Busca um grupo no WhatsApp Web e gera um .xlsx com os participantes.",
+  "content_scripts": [
+    {
+      "matches": ["https://web.whatsapp.com/*"],
+      "js": ["vendor/wppconnect-wa.js", "ponte.js"],
+      "world": "MAIN",
+      "run_at": "document_end"
+    },
+    {
+      "matches": ["https://web.whatsapp.com/*"],
+      "js": ["xlsx.js", "painel.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
